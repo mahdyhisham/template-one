@@ -171,14 +171,25 @@ header .links ul li a:hover {
     background-image: url('../images/pexels-s-migaj-949193.jpg');
     background-size: cover;
     height: calc( 100vh - 130px);
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    flex-flow: column wrap;
+    text-align: center;
+}
+@media (max-width: 767px){
+    .landing {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: calc( 100vh - 420px);
+    }
 }
 .landing .intro-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% , 50%);
-    width: 320px;
-    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    flex-flow: column wrap;
+    text-align: center;
 }
 .landing .intro-text h1 {
     margin: 10px 0;
@@ -199,7 +210,7 @@ header .links ul li a:hover {
         font-size: 40px;
     }
     .landing .intro-text p {
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 /* End Landing Page  */
